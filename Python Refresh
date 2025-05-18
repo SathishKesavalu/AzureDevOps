@@ -1,0 +1,566 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPgb4edOz3kgsjN6pOVq3Bo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SathishKesavalu/AzureDevOps/blob/main/Python%20Refresh\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "trwoTbbbI1yG",
+        "outputId": "ddc199c9-09d6-483a-e659-d3f14a6c655b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Age: 30 (Type: <class 'int'>)\n",
+            "Height: 5.75 (Type: <class 'float'>)\n",
+            "Name: John Doe (Type: <class 'str'>)\n",
+            "Is student: True (Type: <class 'bool'>)\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Integer variable\n",
+        "age = 30\n",
+        "print(f'Age: {age} (Type: {type(age)})')\n",
+        "\n",
+        "# Float variable\n",
+        "height = 5.75\n",
+        "print(f'Height: {height} (Type: {type(height)})')\n",
+        "\n",
+        "# String variable\n",
+        "name = \"John Doe\"\n",
+        "print(f'Name: {name} (Type: {type(name)})')\n",
+        "\n",
+        "# Boolean variable\n",
+        "is_student = True\n",
+        "print(f'Is student: {is_student} (Type: {type(is_student)})')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Jai Ganesha\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aaS21GLHLWnc",
+        "outputId": "248c97cc-247f-4ba8-bcd3-f7b22fd041e6"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Jai Ganesha\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "y = 20\n",
+        "name = \"Alice\"\n",
+        "print (\"x>0 amd y>0:\",x>0 and y>0)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wqnL_2H9P3Tr",
+        "outputId": "a9ddfb4e-65e4-4f3a-8c82-90f8816e1cba"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x>0 amd y>0: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = [\"apple\", \"banana\", \"cherry\"]\n",
+        "print(fruits) # Output: ['apple', 'banana', 'cherry']\n",
+        "first_item = fruits[1]\n",
+        "print(first_item) # Output: 'banana"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5rm-_2uIQNnu",
+        "outputId": "996da1ce-3917-41a4-df0e-8069e1068867"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'banana', 'cherry']\n",
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mixed_list = [\"apple\", 42, 3.14, [1, 2, 3]]\n",
+        "print(mixed_list) # Output: ['apple', 42, 3.14, [1, 2, 3]]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y0aL62OsQ1XU",
+        "outputId": "bc3c3605-4a31-4607-d82a-3c9ca084a438"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 42, 3.14, [1, 2, 3]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Adding an item\n",
+        "fruits.append(\"date\")\n",
+        "print(fruits) # Output: ['apple', 'banana', 'cherry', 'date']\n",
+        "# Removing an item\n",
+        "fruits.remove(\"banana\")\n",
+        "print(fruits) # Output: ['apple', 'cherry', 'date']\n",
+        "# Changing an item\n",
+        "fruits[1] = \"blueberry\"\n",
+        "print(fruits) # Output: ['apple', 'blueberry', 'date’]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W2RN8VUOQ8Pt",
+        "outputId": "37123b7e-a28e-463b-d84a-bab23891a875"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'banana', 'cherry', 'date', 'date']\n",
+            "['apple', 'cherry', 'date', 'date']\n",
+            "['apple', 'blueberry', 'date', 'date']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SLICE\n",
+        "numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+        "\n",
+        "# Slicing from index 2 to 5\n",
+        "subset = numbers[2:6]\n",
+        "print(subset) # Output: [2, 3, 4, 5]\n",
+        "\n",
+        "#Slicing with step size of 2\n",
+        "subset = numbers[1:8:2]\n",
+        "print(subset) # Output: [1, 3, 5,"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aXrO0_u4RS1U",
+        "outputId": "00bcd3e2-5c7c-46ba-9ce4-bfa808c914a4"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 3, 4, 5]\n",
+            "[1, 3, 5, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Define a string\n",
+        "text = \"Hello, World!\"\n",
+        "\n",
+        "# Slicing from index 7 to the end\n",
+        "substring = text[7:]\n",
+        "print(substring) # Output: \"World!\"\n",
+        "\n",
+        "#Slicing from the beginning to index 5\n",
+        "substring = text[:5]\n",
+        "print(substring) # Output: \"Hello\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6YPlWAW7RvRl",
+        "outputId": "e0f26e87-489e-44f5-cae8-5d9735e07eb4"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "World!\n",
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "fruits = (\"apple\", \"banana\", \"cherry\")\n",
+        "print(fruits) # Output: ('apple', 'banana', 'cherry')\n",
+        "\n",
+        "first_item = fruits[0]\n",
+        "print(first_item) # Output: 'apple\n",
+        "\n",
+        "mixed_tuple = (\"apple\", 42, 3.14, (1, 2, 3))\n",
+        "print(mixed_tuple) # Output: ('apple', 42, 3.14, (1, 2, 3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RGHaNgToSnXF",
+        "outputId": "7b60d21e-43f8-4981-d754-475b857e5e7d"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('apple', 'banana', 'cherry')\n",
+            "apple\n",
+            "('apple', 42, 3.14, (1, 2, 3))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#SET - Only Unique value allowed\n",
+        "fruits = {\"apple\", \"banana\", \"cherry\", \"apple\"}\n",
+        "print(fruits) # Output: {'apple', 'banana', 'cherry'} (duplicates are removed\n",
+        "\n",
+        "#Adding an item\n",
+        "fruits.add(\"date\")\n",
+        "print(fruits) # Output: {'apple', 'banana', 'cherry', 'date'}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3aL8mVsWTB1C",
+        "outputId": "2e15eb75-8e58-4f91-e1c9-89a68bbe5bd1"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'banana', 'apple', 'cherry'}\n",
+            "{'banana', 'apple', 'date', 'cherry'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# String methods examples\n",
+        "text = \"Hello, Python! it is a great way to learn GenAI\"\n",
+        "print(text.lower())    # Convert to lowercase\n",
+        "print(text.upper())    # Convert to uppercase\n",
+        "print(text.replace(\"Python\", \"World\"))  # Replace substring\n",
+        "print(text.split(\",\"))  # Split the string\n",
+        "print(text.split(\" \"))  # Split the string\n",
+        "word_list = text.split(\" \")\n",
+        "print (word_list)\n",
+        "\n",
+        "\" \".join (word_list)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 140
+        },
+        "id": "h6ZEzx_1Xzmz",
+        "outputId": "889b92fb-d92c-42fa-d155-b9edd38ccae0"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello, python! it is a great way to learn genai\n",
+            "HELLO, PYTHON! IT IS A GREAT WAY TO LEARN GENAI\n",
+            "Hello, World! it is a great way to learn GenAI\n",
+            "['Hello', ' Python! it is a great way to learn GenAI']\n",
+            "['Hello,', 'Python!', 'it', 'is', 'a', 'great', 'way', 'to', 'learn', 'GenAI']\n",
+            "['Hello,', 'Python!', 'it', 'is', 'a', 'great', 'way', 'to', 'learn', 'GenAI']\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hello, Python! it is a great way to learn GenAI'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = 'Sathish'\n",
+        "date = '10/21/1993'\n",
+        "\n",
+        "print (f\"the name is  {name}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Cfw629UaZOdu",
+        "outputId": "d459729d-ca5c-4bd0-d87a-46af17652013"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the name is  Sathish\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tuple examples\n",
+        "dimensions = (1920, 1080)\n",
+        "print(dimensions)\n",
+        "print(dimensions[0])\n",
+        "print(dimensions[1])\n",
+        "\n",
+        "# Tuples are immutable\n",
+        "#dimensions[0] = 1280  # This will raise an error"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3jF6Gj0BbVim",
+        "outputId": "d7cc3b2b-5629-4f4f-e2e9-9b56a06b5358"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1920, 1080)\n",
+            "1920\n",
+            "1080\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dictionary examples\n",
+        "student = {\n",
+        "    'name': 'Alice',\n",
+        "    'age': 25,\n",
+        "    'courses': ['Math', 'CompSci']\n",
+        "}\n",
+        "#print(student)\n",
+        "\n",
+        "# Accessing dictionary values\n",
+        "#print(student['name'])\n",
+        "##print(student['age'])\n",
+        "\n",
+        "# Adding and updating dictionary values\n",
+        "#student['age'] = 26\n",
+        "#student['phone'] = '555-5555'\n",
+        "#print(student)\n",
+        "\n",
+        "print (student.get('department', 'unknown key'))\n",
+        "student.get('name', 'unknown key')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "id": "k_yfOI28dDEx",
+        "outputId": "cbbe1e66-aadc-4eb7-9c4a-c31ba26758e1"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "unknown key\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Alice'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 49
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#f-strings: It provides a concise and readable way to embed expression inside string literals.\n",
+        "# format method: A more versatile way to format strings.\n",
+        "# String Concatenation\n",
+        "str1 = \"Hello\"\n",
+        "str3 = \"World\"\n",
+        "concatenated_string = str1 + \" \" + str3\n",
+        "print(concatenated_string) # Output: Hello World\n",
+        "name = \"Alice\"\n",
+        "age = 30\n",
+        "formatted_string = f\"My name is {name} and I am {age} years old.\"\n",
+        "print(formatted_string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "78R2QzQ3gsVy",
+        "outputId": "7a27f5ce-354f-41bd-a159-67203839da0c"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n",
+            "My name is Alice and I am 30 years old.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gik9e15NhusY"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "if x > 15:\n",
+        "  print(\"x is greater than 15\")\n",
+        "elif x > 5:\n",
+        "  print(\"x is greater than 5 but less than or equal to 15\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "etARmFGHhuuJ",
+        "outputId": "d6fe78cf-ef37-4bb0-e8dc-fe1a9cb7a92c"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is greater than 5 but less than or equal to 15\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
