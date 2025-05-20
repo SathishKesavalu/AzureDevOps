@@ -1,2 +1,2 @@
-# AzureDevOps
-To Learn AzureDevOps
+# Python
+To Relearn Python
