@@ -1,2 +1,2 @@
 # Python
-To Relearn Python
+To Refresh Python
